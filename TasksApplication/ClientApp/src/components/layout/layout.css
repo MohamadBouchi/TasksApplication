@@ -1,0 +1,7 @@
+﻿#content {
+    height: 100%;
+}
+
+.container {
+    height: calc( 100% - 65px );
+}

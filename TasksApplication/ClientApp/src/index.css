@@ -1,0 +1,17 @@
+﻿html,
+body,
+#root {
+    height: 100vh;
+    margin: 0px;
+}
+
+
+html {
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
