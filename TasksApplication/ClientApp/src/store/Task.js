@@ -11,8 +11,9 @@ export const actionCreators = {
         const url = 'api/Task/get';
         const response = await fetch(url);
         const tasks = await response.json();
+
         dispatch({ type: receiveTasks, tasks });
-        console.log(tasks);
+
     }
 
 };
@@ -29,12 +30,13 @@ export const reducer = (state, action) => {
             isLoading: true
         };
 
-    if (action.type === receiveTasks)
+    if (action.type === receiveTasks) {
         return {
             ...state,
             tasks: action.tasks,
             isLoading: false
         };
+    }
 
 
     return state;
