@@ -16,6 +16,6 @@ namespace TasksApplication.Models
         public string Description { get; set; }
 
         [BsonElement("date")]
-        public BsonDateTime Date { get; set; }
+        public string Date { get; set; }
     }
 }
